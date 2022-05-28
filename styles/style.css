@@ -10,15 +10,54 @@
 .subs{       
     border-top: 3px solid rgb(255, 0, 0);
     border-color: rgb(255, 0, 0);
-    border-bottom: 3px solid rgb(255, 0, 0);    
+    border-bottom: 3px solid rgb(255, 0, 0); 
+    width: 5%; 
+    margin: 0 47% 0 47%;   
 }
+
+/* Main */
+
+.cardsideform{
+    height: 500px;
+}
+
+.cardform {
+    box-shadow: rgb(172, 172, 172) 0px 0px 15px;
+    height: 500px;    
+}
+
+
+/*Fin de main */
+
+/* Beneficios */
+
+#imgbeneficios {
+    width: 40px;
+    margin-left: 17px;
+}
+
+.displaytext {
+    color: #ff6f6f;
+}
+
+.displaytext span {
+    color: #ff6f6f;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+}
+
+/* Fin de beneficios */
 
 
 /* Casos de exito */
 #btn-contratar{
     background-color: linear-gradient(to right, #ff6f6f, #ffcdcd);
     color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     
 }
 
@@ -28,15 +67,37 @@
 
 /* Fin de Casos de exito */
 
-/*Precios*/
+/* Obtener */
 
-.startercard {
-    border: 0px solid #fff;
+#cardobtener{
+    height: 300px;
+    border-radius: 20px 20px 5px 5px;
+    box-shadow: rgb(172, 172, 172) 0px 0px 10px;
 }
 
-.premiumcard {
-    border: 0px solid #fff;
+/* Fin de obtener */
+
+/* Venta */
+
+#venta{
+    background-image: url("../assets/Clip.png");    
+}
+
+.cardventa {
+    background-color: transparent;
+}
+
+/* Fin de venta */
+
+/*Precios*/
+
+.startercard {    
+    height: 1000px;
+}
+
+.premiumcard {    
     box-shadow: rgb(172, 172, 172) 0px 0px 50px;
+    height: 1000px;
 }
 
 .img-price {
@@ -46,11 +107,17 @@
 
 .text-price{
     color: #ff6f6f;
+    text-decoration: line-through;
 }
 
 .price {
-    font-size: 50px;    
+    font-size: 20px;       
     margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 30px; 
+    font-weight: bold;
 }
 
 .line {
