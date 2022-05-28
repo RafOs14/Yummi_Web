@@ -19,121 +19,256 @@
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center mb-5">
-    <p class="navbar-text m-0 text-light">Solicita tu prueba gratis hoy y recibe 50% de descuento en el plan que elijas</p>
-  </nav> 
+    <p class="navbar-text m-0 text-light">Solicita tu prueba gratis hoy y recibe 50% de descuento en el plan que elijas
+    </p>
+  </nav>
   <!--End of Navbar-->
 
   <!--Main-->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="./assets/Logo Yuumi_1.png" width="150px" height="60px" alt="">
+  <div class="container mainbackground">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./assets/Logo Yuumi_1.png" width="150px" height="60px" alt="">
+        </div>
+        <div class="col-md-6 text-center">
+          <button class="btn btn-primary">Registrarse</button>
+          <button class="btn btn-primary">Iniciar Sesión</button>
+        </div>
       </div>
-      <div class="col-md-6 text-end">
-        <button class="btn btn-primary">Registrarse</button>
-        <button class="btn btn-primary">Iniciar Sesión</button>
+    </div>
+    <!--End of Main-->
+
+    <!--Formulario Main-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card border-light cardsideform">
+            <div class="card-body">
+              <h1><b>¡Vende sin comisiones en tu propia tienda!</b></h1>
+              <h5 class="mt-4 mb-5">Tu propio canal, tu marca y clientes.</h5>
+              <div class="mt-5">
+                <button class="btn btn-warning">Inicia gratis</button>
+                &nbsp;
+                <button class="btn">Agendar demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card cardform">
+            <div class="card-body">
+              <form class="row g-3" action="">
+                <h3 class="text-center">Agenda tu demo</h3>
+                <!--<hr class="subs">-->
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Nombre Completo</label>
+                  <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="col-md-6">
+                  <label for="select" class="form-label">¿Dónde te encuentras ubicado?</label>
+                  <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email " placeholder="Ingresa tu correo">
+                </div>
+                <div class="col-12">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                </div>
+                <div class="mb-3"></div>
+                <div class="text-center mt-5">
+                  <button class="btn btn-warning">Agendar demo</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!--End of Main-->
-
-    <!--Formulario Main-->
-    <div class="container text-center mt-5" id="venta">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-  
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-  
-            </div>
-          </div>          
-        </div>
-      </div>
-    </div>
-    <!--End of Formulario Main-->
+  <!--End of Formulario Main-->
 
   <!--Beneficios-->
-  <div class="container text-center mt-5" id="beneficios">
-    <h4> Beneficios de tener Yuumi en tu Restaurante </h4>
+  <div class="container mt-5" id="beneficios">
+    <!--<img src="./Features.png" alt="">-->
+    <h4 class="text-center"> Beneficios de tener Yuumi en tu Restaurante </h4>    
     <hr class="subs">
     <div class="row row-cols-1 row-cols-md-3 g-3">
       <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card border-light">
+          <img src="./assets/face.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body">
-            <h5 class="card-title">Cero comisiones</h5>
-            <p class="card-text">Vende en línea sin comisiones a través de tu propia tienda web y móvil autoadministrable, con tu propia identidad</p>
+            <h5 class="card-title fw-bold">Cero comisiones</h5>
+            <p class="card-text">Vende en línea sin comisiones a través de tu propia tienda web y móvil
+              autoadministrable, con tu propia identidad</p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card border-light">
+          <img src="./assets/starhand.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body">
-            <h5 class="card-title">Dueño de tu propio canal ¡tus propias reglas!</h5>
+            <h5 class="card-title fw-bold">Dueño de tu propio canal ¡tus propias reglas!</h5>
             <p class="card-text">Fideliza a tus clientes y ofrece una experiencia de compra amigable e intuitiva.</p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card border-light">
+          <img src="./assets/lupa.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body">
-            <h5 class="card-title">Analiza tus datos</h5>
-            <p class="card-text">Accesa todos los datos y números de tu restaurante en tiempo real. Identifica oportunidades para incrementar tus resultado.</p>
+            <h5 class="card-title fw-bold">Analiza tus datos</h5>
+            <p class="card-text">Accesa todos los datos y números de tu restaurante en tiempo real. Identifica
+              oportunidades para incrementar tus resultado.</p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card border-light">
+          <img src="./assets/hands.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body">
-            <h5 class="card-title">Entiende el comportamiento de tus clientes</h5>
+            <h5 class="card-title fw-bold">Entiende el comportamiento de tus clientes</h5>
             <p class="card-text">Recibe toda la data de tus clientes y descubre cómo interactúan con tu negocio.</p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card border-light">
+          <img src="./assets/desktop.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body">
-            <h5 class="card-title">Automatiza la gestión de ventas digitales</h5>
+            <h5 class="card-title fw-bold">Automatiza la gestión de ventas digitales</h5>
             <p class="card-text">Conecta los procesos de tu restaurante, reduciendo errores y pérdidas.</p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Conecta los diferentes canales de venta</h5>
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Conecta los diferentes canales de venta</h5>
             <p class="card-text">Integración con Facebook Shops, Instagram Shopping y Whatsapp.</p>
           </div>
-        </div>
-      </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">El dinero va directo a tu cuenta</h5>
+            <p class="card-text">Los pagos en línea van directo a tus cuentas.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Tus clientes pueden seguir los pedidos en tiempo real</h5>
+            <p class="card-text">Con nuestro de tracking tus clientes podrán hacer seguimiento en tiempo real y conocer estado de pedidos.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Cocina digital</h5>
+            <p class="card-text">Optimiza tu cocina con comandas digitales.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Plataformas rápidas e intuitivas</h5>
+            <p class="card-text">No importa si no tienes experiencia, te  acompañamos para llevar tu restaurante a otro nivel.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">App Domiciliarios</h5>
+            <p class="card-text">App móvil para tu flota de domiciliarios que te permitirá automatizar el despacho de pedidos.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Control Total</h5>
+            <p class="card-text">Toma el control de toda la información de tu negocio a través del panel administrativo. </p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Entregamos los pedidos por ti</h5>
+            <p class="card-text">Si no quieres preocuparte por el despacho de tus pedidos, nosotros lo hacemos por ti, puedes solicitar la recogida con un clic. </p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Inventario y POS centralizado</h5>
+            <p class="card-text">Maneja inventarios centralizados y conectados a las soluciones en la nube.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Marketing Automatizado</h5>
+            <p class="card-text">Envío de correos y SMS a tus clientes para avisarles de eventos o promociones.</p>
+          </div>
+        </div>        
+      </div> 
+      <div class="col">
+        <div class="card border-light">
+          <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
+          <div class="card-body ">
+            <h5 class="card-title fw-bold">Soporte Personalizado</h5>
+            <p class="card-text">Siempre estamos dispuestos a ayudarte cuando más lo necesitas.</p>
+          </div>
+        </div>        
+      </div>      
     </div>
-    
+    <div class="text-center mt-5">
+      <!--<p class="displaytext">Ver todo <span>»</span></p>-->
+      <img src="./assets/vertodo.png" alt="">
+    </div>
   </div>
   <!--End of Beneficios-->
 
   <!--Modalidades-->
   <div class="container text-center mt-5" id="modalidades">
-    <h4> Tus modalidades de venta en un solo lugar  </h4>    
+    <h4> Tus modalidades de venta en un solo lugar </h4>
     <hr class="subs">
+    <img src="./assets/modalidadventa.png" alt="">
   </div>
   <!--End of Modalidades-->
 
-  <!--Casos de exito--> 
+  <!--Casos de exito-->
   <div class="container text-center mt-5" id="casos">
-    <h4> Casos de éxito  </h4>
+    <h4> Casos de éxito </h4>
     <hr class="subs">
-    <p>Algunos de nuestros clientes han logrado anualmente más de 30 mil pedidos libres de comisiones gracias a Yuumi.</p>
+    <p class="mt-5">Algunos de nuestros clientes han logrado anualmente más de 30 mil pedidos libres de comisiones gracias a Yuumi.
+    </p>
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
@@ -148,110 +283,115 @@
         <div class="col-sm-3">
           <img src="./assets/logo_la_pampa.png" alt="">
         </div>
-      </div>      
+      </div>
     </div>
     <button class="btn btn-danger" id="btn-contratar">Deseo contratar ahora</button>
   </div>
   <!--End of Casos de exito-->
 
   <!--Obtener-->
-  <div class="container text-center mt-5" id="obtener">
-    <h4 class="mb-5">Obtener Yuumi en tu Restaurante es Súper Fácil</h4>
+  <div class="container text-center mt-5" id="obtener"> 
+    <h4 class="mb-2">Obtener Yuumi en tu Restaurante es Súper Fácil</h4>
     <hr class="subs">
-    <br>        
+    <br>
     <div class="container mt-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card">
+          <div class="card border-light" id="cardobtener">
             <img src="./assets/freelance-young-asian-business.png" class="card-img-top" alt="...">
-              <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
-                <img src="./assets/Componente 1 – 1.png">           
-              </span>
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
+              <img src="./assets/Componente 1 – 1.png" width="110px">
+            </span>
             </img>
             <div class="card-body text-center">
-              <h5 class="card-title m-4"><b>Registra tu restaurante</b></h5>              
+              <h5 class="card-title m-4"><b>Registra tu restaurante</b></h5>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-light" id="cardobtener">
             <img src="./assets/happy-male-writing-positive-ma.png" class="card-img-top" alt="...">
-              <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
-                <img src="./assets/Componente 2 – 1.png">               
-              </span>
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
+              <img src="./assets/Componente 2 – 1.png" width="110px">
+            </span>
             </img>
             <div class="card-body text-center">
-              <h5 class="card-title m-4"><b>Configura tu Tienda</b></h5>              
+              <h5 class="card-title m-4"><b>Configura tu Tienda</b></h5>
             </div>
           </div>
-        </div>       
+        </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-light" id="cardobtener">
             <img src="./assets/successful-businessman-casual-.png" class="card-img-top" alt="...">
-              <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
-                <img src="./assets/Componente 3 – 1.png">                                       
-              </span>
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
+              <img src="./assets/Componente 3 – 1.png" width="110px">
+            </span>
             </img>
             <div class="card-body text-center">
-              <h5 class="card-title mt-4 mr-4 ml-4"><b>Activa y empieza a recibir Pedidos</b></h5>              
+              <h5 class="card-title mt-4 mr-4 ml-4"><b>Activa y empieza a recibir Pedidos</b></h5>
             </div>
           </div>
         </div>
       </div>
-    </div>    
+    </div>
   </div>
   <!--End of Obtener-->
 
   <!--Venta en linea-->
-  <div class="container text-center mt-5" id="venta">
+  <div class="container mt-5" id="venta">
     <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-
+      <div class="col-md-6" id="cardventa">
+        <div class="card cardventa">
+          <div class="card-body cardventa text-left">
+            <div class="card-title cardventa">
+              <h2>Empieza a vender en linea sin <b>comisiones</b> ahora</h2>
+            </div>
+            <hr>
+            <p>Somos la tecnología que impulsa tu restaurante a otro nivel</p>
+            <button class="btn">Iniciar gratis</button>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-
+      <div class="col-md-6" id="cardventa">
+        <div class="card cardventa">
+          <div class="card-body cardventa">
+            <!--<img src="./assets/ChartVentas.png" alt="" width="600px">-->
           </div>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
   <!--End of Venta en linea-->
 
   <!--Precios-->
   <div class="container text-center mt-5" id="precios">
-    <h4 class="fw-bold mb-5">Precios</h4>
-    <hr class="subs">
-    <div class="row">
+    <h4 class="fw-bold mb-2">Precios</h4>
+    <hr class="subs mb-5">
+    <div class="row mt-5">
       <div class="col-md-6">
-        <div class="card startercard">
+        <div class="card border-light startercard">
           <div class="card-body">
-            <h5 class="card-title">Yuumi Starter</h5>
-            <img class="img-price" src="./assets/logo_amici.png" alt="">
+            <h5 class="card-title fw-bold">Yuumi Starter</h5>
+            <img class="img-price" src="./assets/Ellipse_starter.png" alt="">
             <p class="text-price">$79.900</p>
-            <p class="price">$39.950 / mes</p>
+            <p class="price"><span>$39.950</span> / mes</p>
             <p>Facturado anual</p>
             <hr class="line">
             <ul class="liststarter">
-              <li>1 sede                                            </li>
-              <li>1 menú                                            </li>
-              <li>80 pedidos mensuales                              </li>
-              <li>Reportes                                          </li>
-              <li>10 usuarios                                       </li>
-              <li>Tienda en línea                                   </li>
-              <li>Base de datos de clientes                         </li>
-              <li>App domicilios                                    </li>   
-              <li>App cocina                                        </li>
-              <li>Notificaciones                                    </li>
+              <li>1 sede </li>
+              <li>1 menú </li>
+              <li>80 pedidos mensuales </li>
+              <li>Reportes </li>
+              <li>10 usuarios </li>
+              <li>Tienda en línea </li>
+              <li>Base de datos de clientes </li>
+              <li>App domicilios </li>
+              <li>App cocina </li>
+              <li>Notificaciones </li>
               <li>Cálculo automático de valor de domicilio por zona </li>
-              <li>Tracking de pedidos en tienda                     </li>
-              <li>Caja domiciliarios                                </li>
-              <li>Soporte vía chat                                  </li>
+              <li>Tracking de pedidos en tienda </li>
+              <li>Caja domiciliarios </li>
+              <li>Soporte vía chat </li>
             </ul>
             <button class="btn btn-outline-danger">Contratar</button>
           </div>
@@ -260,24 +400,24 @@
       <div class="col-md-6">
         <div class="card premiumcard">
           <div class="card-body">
-            <h5 class="card-title">Yuumi Premium</h5>
-            <img class="img-price" src="./assets/logo_amici.png" alt="">
+            <h5 class="card-title fw-bold">Yuumi Premium</h5>
+            <img class="img-price" src="./assets/Ellipse_premium.png" alt="">
             <p class="text-price">$139.900</p>
-            <p class="price">$69.950 / mes</p>
+            <p class="price"><span>$69.950</span> / mes</p>
             <p>Facturado anual</p>
             <hr class="line">
             <ul class="listpremium">
-              <li>2 sedes                                           </li>
-              <li>Tienda en línea template premium                  </li>
-              <li>Menús ilimitados                                  </li>
-              <li>Reportes avanzados en tiempo real                 </li>
-              <li>Usuarios ilimitados                               </li>
-              <li>Soporte express vía llamada                       </li>
-              <li>Dominio propio                                    </li>
-              <li>Cálculo de tiempo de entrega automático           </li>   
-              <li>Asignación automática de domicilios               </li>
-              <li>App móvil del restaurante                         </li>
-              <li>API de integración POS                            </li>              
+              <li>2 sedes </li>
+              <li>Tienda en línea template premium </li>
+              <li>Menús ilimitados </li>
+              <li>Reportes avanzados en tiempo real </li>
+              <li>Usuarios ilimitados </li>
+              <li>Soporte express vía llamada </li>
+              <li>Dominio propio </li>
+              <li>Cálculo de tiempo de entrega automático </li>
+              <li>Asignación automática de domicilios </li>
+              <li>App móvil del restaurante </li>
+              <li>API de integración POS </li>
             </ul>
             <button class="btn btnpremium">Contratar</button>
           </div>
@@ -288,21 +428,21 @@
   <!--End of Precios-->
 
   <!--Apoyo-->
-  <div class="container text-center mt-5 mb-5">
-    <h4> Con el apoyo de  </h4>
+  <div class="container text-center justify-content-center mt-5 mb-5">
+    <h4> Con el apoyo de </h4>
     <hr class="subs">
     <div class="row">
       <div class="col-sm-3">
         <img src="./assets/Fondo_Emprender_-removebg-prev.png" alt="">
       </div>
       <div class="col-sm-3">
-        <img src="./assets/Presidencia_de_la_Republica-re.png" alt="">
+        <img src="./assets/Logo-_U_Distrital-removebg-pre.png" alt="">
       </div>
       <div class="col-sm-3">
         <img src="./assets/logo-de-SENA-png-Negro.png" alt="">
       </div>
       <div class="col-sm-3">
-        <img src="./assets/Logo-_U_Distrital-removebg-pre.png" alt="">
+        <img src="./assets/Presidencia_de_la_Republica-re.png" alt="">
       </div>
     </div>
   </div>
@@ -310,11 +450,20 @@
 
   <!--Footer-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    ...
+    <div class="col-md-6 text-center">
+      <img src="./assets/logo blanco.png" width="150px" height="60px" alt="">
+    </div>
+    <div class="col-md-6 text-center">
+      <a href="#"><img src="./assets/Elipse instagram.png" alt=""></a>
+      &nbsp;
+      <a href="#"><img src="./assets/Elipse facebook.png" alt=""></a>
+      &nbsp;
+      <a href="#"><img src="./assets/Elipse whatsapp.png" alt=""></a>
+    </div>
   </nav>
   <!--End of footer-->
 
-  
+
 
   <!-- Optional JavaScript; choose one of the two! -->
   <script src="./scripts/script.js"></script>
