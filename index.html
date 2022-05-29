@@ -17,89 +17,111 @@
 </head>
 
 <body>
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center mb-5">
-    <p class="navbar-text m-0 text-light">Solicita tu prueba gratis hoy y recibe 50% de descuento en el plan que elijas
-    </p>
-  </nav>
-  <!--End of Navbar-->
-
-  <!--Main-->
-  <div class="container mainbackground">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./assets/Logo Yuumi_1.png" width="150px" height="60px" alt="">
-        </div>
-        <div class="col-md-6 text-center">
-          <button class="btn btn-primary">Registrarse</button>
-          <button class="btn btn-primary">Iniciar Sesión</button>
+  <div class="header">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center mb-5">
+      <p class="navbar-text m-0 text-light">Solicita tu prueba gratis hoy y recibe 50% de descuento en el plan que
+        elijas
+      </p>
+    </nav>
+    <!--End of Navbar-->
+    <!--Content before waves-->
+    <div class="inner-header flex">
+      <!--Main-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-start ml-5">
+            <img src="./assets/Logo Yuumi_1.png" width="150px" height="60px" alt="">
+          </div>
+          <div class="col-md-6 text-end mr-5">
+            <button class="btn btn-primary">Registrarse</button>
+            <a href="http://app.yuumi.co/" class="btn btn-primary">Iniciar Sesión</a>
+          </div>
         </div>
       </div>
-    </div>
-    <!--End of Main-->
+      <!--End of Main-->
 
-    <!--Formulario Main-->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card border-light cardsideform">
-            <div class="card-body">
-              <h1><b>¡Vende sin comisiones en tu propia tienda!</b></h1>
-              <h5 class="mt-4 mb-5">Tu propio canal, tu marca y clientes.</h5>
-              <div class="mt-5">
-                <button class="btn btn-warning">Inicia gratis</button>
-                &nbsp;
-                <button class="btn">Agendar demo</button>
+      <!--Formulario Main-->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card border-light cardsideform">
+              <div class="card-body">
+                <h1><b>¡Vende sin comisiones en tu propia tienda!</b></h1>
+                <h5 class="mt-4 mb-5">Tu propio canal, tu marca y clientes.</h5>
+                <div class="mt-5">
+                  <button class="btn btn-warning">Inicia gratis</button>
+                  &nbsp;
+                  <button class="btn">Agendar demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" id="cardform">
+              <div class="card-body">
+                <form class="row g-3" action="">
+                  <h3 class="text-center">Agenda tu demo</h3>
+                  <!--<hr class="subs">-->
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="select" class="form-label">¿Dónde te encuentras ubicado?</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccione</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email " placeholder="Ingresa tu correo">
+                  </div>
+                  <div class="col-12">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                  </div>
+                  <div class="mb-3"></div>
+                  <div class="text-center mt-5">
+                    <button class="btn btn-warning">Agendar demo</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card cardform">
-            <div class="card-body">
-              <form class="row g-3" action="">
-                <h3 class="text-center">Agenda tu demo</h3>
-                <!--<hr class="subs">-->
-                <div class="col-md-6">
-                  <label for="name" class="form-label">Nombre Completo</label>
-                  <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="col-md-6">
-                  <label for="select" class="form-label">¿Dónde te encuentras ubicado?</label>
-                  <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccione</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <label for="email" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="email " placeholder="Ingresa tu correo">
-                </div>
-                <div class="col-12">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
-                </div>
-                <div class="mb-3"></div>
-                <div class="text-center mt-5">
-                  <button class="btn btn-warning">Agendar demo</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
+      <!--End of Formulario Main-->
     </div>
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
   </div>
-  <!--End of Formulario Main-->
-
+  <!--Header ends-->
+  <br>
   <!--Beneficios-->
   <div class="container mt-5" id="beneficios">
     <!--<img src="./Features.png" alt="">-->
-    <h4 class="text-center"> Beneficios de tener Yuumi en tu Restaurante </h4>    
-    <hr class="subs">
+    <h4 class="text-center fw-bold"> Beneficios de tener Yuumi en tu Restaurante </h4>
+    <div>
+      <hr class="subs">
+    </div>
     <div class="row row-cols-1 row-cols-md-3 g-3">
       <div class="col">
         <div class="card border-light">
@@ -155,8 +177,10 @@
             <h5 class="card-title fw-bold">Conecta los diferentes canales de venta</h5>
             <p class="card-text">Integración con Facebook Shops, Instagram Shopping y Whatsapp.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3 collapse" id="collapseExample">
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
@@ -164,17 +188,18 @@
             <h5 class="card-title fw-bold">El dinero va directo a tu cuenta</h5>
             <p class="card-text">Los pagos en línea van directo a tus cuentas.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body ">
             <h5 class="card-title fw-bold">Tus clientes pueden seguir los pedidos en tiempo real</h5>
-            <p class="card-text">Con nuestro de tracking tus clientes podrán hacer seguimiento en tiempo real y conocer estado de pedidos.</p>
+            <p class="card-text">Con nuestro de tracking tus clientes podrán hacer seguimiento en tiempo real y conocer
+              estado de pedidos.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
@@ -182,44 +207,48 @@
             <h5 class="card-title fw-bold">Cocina digital</h5>
             <p class="card-text">Optimiza tu cocina con comandas digitales.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body ">
             <h5 class="card-title fw-bold">Plataformas rápidas e intuitivas</h5>
-            <p class="card-text">No importa si no tienes experiencia, te  acompañamos para llevar tu restaurante a otro nivel.</p>
+            <p class="card-text">No importa si no tienes experiencia, te acompañamos para llevar tu restaurante a otro
+              nivel.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body ">
             <h5 class="card-title fw-bold">App Domiciliarios</h5>
-            <p class="card-text">App móvil para tu flota de domiciliarios que te permitirá automatizar el despacho de pedidos.</p>
+            <p class="card-text">App móvil para tu flota de domiciliarios que te permitirá automatizar el despacho de
+              pedidos.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body ">
             <h5 class="card-title fw-bold">Control Total</h5>
-            <p class="card-text">Toma el control de toda la información de tu negocio a través del panel administrativo. </p>
+            <p class="card-text">Toma el control de toda la información de tu negocio a través del panel administrativo.
+            </p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
           <div class="card-body ">
             <h5 class="card-title fw-bold">Entregamos los pedidos por ti</h5>
-            <p class="card-text">Si no quieres preocuparte por el despacho de tus pedidos, nosotros lo hacemos por ti, puedes solicitar la recogida con un clic. </p>
+            <p class="card-text">Si no quieres preocuparte por el despacho de tus pedidos, nosotros lo hacemos por ti,
+              puedes solicitar la recogida con un clic. </p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
@@ -227,8 +256,8 @@
             <h5 class="card-title fw-bold">Inventario y POS centralizado</h5>
             <p class="card-text">Maneja inventarios centralizados y conectados a las soluciones en la nube.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
@@ -236,8 +265,8 @@
             <h5 class="card-title fw-bold">Marketing Automatizado</h5>
             <p class="card-text">Envío de correos y SMS a tus clientes para avisarles de eventos o promociones.</p>
           </div>
-        </div>        
-      </div> 
+        </div>
+      </div>
       <div class="col">
         <div class="card border-light">
           <img src="./assets/redes.png" class="card-img-top" alt="..." id="imgbeneficios">
@@ -245,29 +274,37 @@
             <h5 class="card-title fw-bold">Soporte Personalizado</h5>
             <p class="card-text">Siempre estamos dispuestos a ayudarte cuando más lo necesitas.</p>
           </div>
-        </div>        
-      </div>      
+        </div>
+      </div>
     </div>
+    <!--------------------------------Boton que oculta las cards----------------------------------------------------->
     <div class="text-center mt-5">
       <!--<p class="displaytext">Ver todo <span>»</span></p>-->
-      <img src="./assets/vertodo.png" alt="">
+      <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample"><img src="./assets/vertodo.png" alt=""></a>
     </div>
+    <!--------------------------------------------------------------------------------------------------------------->
   </div>
   <!--End of Beneficios-->
-
+  <br>
   <!--Modalidades-->
   <div class="container text-center mt-5" id="modalidades">
-    <h4> Tus modalidades de venta en un solo lugar </h4>
-    <hr class="subs">
-    <img src="./assets/modalidadventa.png" alt="">
+    <h4 class="fw-bold"> Tus modalidades de venta en un solo lugar </h4>
+    <div>
+      <hr class="subs">
+    </div>
+    <!--<img src="./assets/modalidadventa.png" alt="">-->
   </div>
   <!--End of Modalidades-->
-
+  <br>
   <!--Casos de exito-->
   <div class="container text-center mt-5" id="casos">
-    <h4> Casos de éxito </h4>
-    <hr class="subs">
-    <p class="mt-5">Algunos de nuestros clientes han logrado anualmente más de 30 mil pedidos libres de comisiones gracias a Yuumi.
+    <h4 class="fw-bold"> Casos de éxito </h4>
+    <div>
+      <hr class="subs">
+    </div>
+    <p class="mt-5">Algunos de nuestros clientes han logrado anualmente más de 30 mil pedidos libres de comisiones
+      gracias a Yuumi.
     </p>
     <div class="container">
       <div class="row">
@@ -285,14 +322,16 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-danger" id="btn-contratar">Deseo contratar ahora</button>
+    <button class="btn btn-lg" id="btn-contratar">Deseo contratar ahora</button>
   </div>
   <!--End of Casos de exito-->
-
+  <br>
   <!--Obtener-->
-  <div class="container text-center mt-5" id="obtener"> 
-    <h4 class="mb-2">Obtener Yuumi en tu Restaurante es Súper Fácil</h4>
-    <hr class="subs">
+  <div class="container text-center mt-5" id="obtener">
+    <h4 class="mb-2 fw-bold">Obtener Yuumi en tu Restaurante es Súper Fácil</h4>
+    <div>
+      <hr class="subs">
+    </div>
     <br>
     <div class="container mt-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -336,7 +375,7 @@
     </div>
   </div>
   <!--End of Obtener-->
-
+  <br>
   <!--Venta en linea-->
   <div class="container mt-5" id="venta">
     <div class="row">
@@ -362,11 +401,13 @@
     </div>
   </div>
   <!--End of Venta en linea-->
-
+  <br>
   <!--Precios-->
   <div class="container text-center mt-5" id="precios">
     <h4 class="fw-bold mb-2">Precios</h4>
-    <hr class="subs mb-5">
+    <div>
+      <hr class="subs">
+    </div>
     <div class="row mt-5">
       <div class="col-md-6">
         <div class="card border-light startercard">
@@ -375,25 +416,27 @@
             <img class="img-price" src="./assets/Ellipse_starter.png" alt="">
             <p class="text-price">$79.900</p>
             <p class="price"><span>$39.950</span> / mes</p>
-            <p>Facturado anual</p>
-            <hr class="line">
+            <p class="text-muted">Facturado anual</p>
+            <div class="container">
+              <hr class="text-center" id="line">
+            </div>
             <ul class="liststarter">
-              <li>1 sede </li>
-              <li>1 menú </li>
-              <li>80 pedidos mensuales </li>
-              <li>Reportes </li>
-              <li>10 usuarios </li>
-              <li>Tienda en línea </li>
-              <li>Base de datos de clientes </li>
-              <li>App domicilios </li>
-              <li>App cocina </li>
-              <li>Notificaciones </li>
-              <li>Cálculo automático de valor de domicilio por zona </li>
-              <li>Tracking de pedidos en tienda </li>
-              <li>Caja domiciliarios </li>
-              <li>Soporte vía chat </li>
+              <li class="mb-4 text-muted">1 sede </li>
+              <li class="mb-4 text-muted">1 menú </li>
+              <li class="mb-4 text-muted">80 pedidos mensuales </li>
+              <li class="mb-4 text-muted">Reportes </li>
+              <li class="mb-4 text-muted">10 usuarios </li>
+              <li class="mb-4 text-muted">Tienda en línea </li>
+              <li class="mb-4 text-muted">Base de datos de clientes </li>
+              <li class="mb-4 text-muted">App domicilios </li>
+              <li class="mb-4 text-muted">App cocina </li>
+              <li class="mb-4 text-muted">Notificaciones </li>
+              <li class="mb-4 text-muted">Cálculo automático de valor de domicilio por zona </li>
+              <li class="mb-4 text-muted">Tracking de pedidos en tienda </li>
+              <li class="mb-4 text-muted">Caja domiciliarios </li>
+              <li class="mb-4 text-muted">Soporte vía chat </li>
             </ul>
-            <button class="btn btn-outline-danger">Contratar</button>
+            <button class="btn btn-outline-danger mt-5 btn-lg">Contratar</button>
           </div>
         </div>
       </div>
@@ -404,33 +447,46 @@
             <img class="img-price" src="./assets/Ellipse_premium.png" alt="">
             <p class="text-price">$139.900</p>
             <p class="price"><span>$69.950</span> / mes</p>
-            <p>Facturado anual</p>
-            <hr class="line">
+            <p class="text-muted">Facturado anual</p>
+            <div class="container">
+              <hr class=" text-center" id="line">
+            </div>
             <ul class="listpremium">
-              <li>2 sedes </li>
-              <li>Tienda en línea template premium </li>
-              <li>Menús ilimitados </li>
-              <li>Reportes avanzados en tiempo real </li>
-              <li>Usuarios ilimitados </li>
-              <li>Soporte express vía llamada </li>
-              <li>Dominio propio </li>
-              <li>Cálculo de tiempo de entrega automático </li>
-              <li>Asignación automática de domicilios </li>
-              <li>App móvil del restaurante </li>
-              <li>API de integración POS </li>
+              <li class="mb-4 text-muted">2 sedes </li>
+              <li class="mb-4 text-muted">Tienda en línea template premium </li>
+              <li class="mb-4 text-muted">Menús ilimitados </li>
+              <li class="mb-4 text-muted">Reportes avanzados en tiempo real </li>
+              <li class="mb-4 text-muted">Usuarios ilimitados </li>
+              <li class="mb-4 text-muted">Soporte express vía llamada </li>
+              <li class="mb-4 text-muted">Dominio propio </li>
+              <li class="mb-4 text-muted">Cálculo de tiempo de entrega automático </li>
+              <li class="mb-4 text-muted">Asignación automática de domicilios </li>
+              <li class="mb-4 text-muted">App móvil del restaurante </li>
+              <li class="mb-4 text-muted">API de integración POS </li>
+              <li class="mb-4 text-muted">&nbsp; </li>
+              <li class="mb-4 text-muted">&nbsp; </li>
+              <li class="mb-4 text-muted">&nbsp; </li>
             </ul>
-            <button class="btn btnpremium">Contratar</button>
+            <button class="btn btnpremium mt-5 btn-lg" style="color: white;">Contratar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!--End of Precios-->
+  <br>
+  <!--Contenedor de formulario hubspot-->
+  <div class="container mt-5 mb-5" id="formhubspot">
 
+  </div>
+  <!--Fin de contenedor de formulario hubspot-->
+  <br>
   <!--Apoyo-->
   <div class="container text-center justify-content-center mt-5 mb-5">
-    <h4> Con el apoyo de </h4>
-    <hr class="subs">
+    <h4 class="fw-bold"> Con el apoyo de </h4>
+    <div>
+      <hr class="subs">
+    </div>
     <div class="row">
       <div class="col-sm-3">
         <img src="./assets/Fondo_Emprender_-removebg-prev.png" alt="">
@@ -447,7 +503,7 @@
     </div>
   </div>
   <!--End of Apoyo-->
-
+  <br>
   <!--Footer-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="col-md-6 text-center">
@@ -462,8 +518,6 @@
     </div>
   </nav>
   <!--End of footer-->
-
-
 
   <!-- Optional JavaScript; choose one of the two! -->
   <script src="./scripts/script.js"></script>
