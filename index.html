@@ -19,82 +19,86 @@
 <body>
   <div class="header">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center mb-5">
-      <p class="navbar-text m-0 text-light">Solicita tu prueba gratis hoy y recibe 50% de descuento en el plan que
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark  justify-content-center mb-5">
+      <p class="m-0 text-light">Solicita tu prueba gratis hoy y recibe 50% de descuento en el plan que
         elijas
       </p>
     </nav>
     <!--End of Navbar-->
     <!--Content before waves-->
-    <div class="inner-header flex">
+    <div class="container-fluid">
       <!--Main-->
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-start ml-5">
-            <img src="./assets/logo blanco.png" width="150px" height="60px" alt="">
-          </div>
-          <div class="col-md-6 text-end mr-5">
-            <button class="btn btn-primary">Registrarse</button>
-            <a href="http://app.yuumi.co/" class="btn btn-primary">Iniciar Sesión</a>
+        <div class="container mainContainer">
+          <div class="row">
+            <div class="col-md-6 ml-5 ">
+              <img class=".navbar-brand imgLogo" src="./assets/logo blanco.png" width="150px" height="50px" alt="">
+            </div>
+            <div class="btnLogo col-md-6">
+              <a href="http://app.yuumi.co/"><button class="button1 btn-outline-danger btn-lg">Iniciar
+                  Sesión</button></a>
+              &nbsp;
+              <a href="#formhubspot"><button class="button1 btn-outline-danger btn-lg">Registrarse</button></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!--End of Main-->
+        <!--End of Main-->
 
-      <!--Formulario Main-->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card border-light cardsideform">
-              <div class="card-body">
-                <h1><b>¡Vende sin comisiones en tu propia tienda!</b></h1>
-                <h5 class="mt-4 mb-5">Tu propio canal, tu marca y clientes.</h5>
-                <div class="mt-5">
-                  <button class="btn btn-warning">Inicia gratis</button>
-                  &nbsp;
-                  <button class="btn">Agendar demo</button>
+        <!--Formulario Main-->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="border-light cardsideform">
+                <div class="card-body">
+                  <h1><b>¡Vende sin comisiones en tu propia tienda!</b></h1>
+                  <h5 class="mt-4 mb-5">Tu propio canal, tu marca y clientes.</h5>
+                  <div class="mt-5">
+                    <a href="#formhubspot"><button class=" btn-warning btn-lg">Inicia gratis</button></a>
+                    &nbsp;
+                    <a href="#formhubspot"><button class="button2 btn-lg">Agendar demo</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card" id="cardform">
+                <div class="card-body">
+                  <form class="row g-3" action="">
+                    <h3 class="text-center">Agenda tu demo</h3>
+                    <!--<hr class="subs">-->
+                    <div class="formContainer col-md-5">
+                      <label for="name" class="form-label">Nombre Completo</label>
+                      <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="col-md-7">
+                      <label for="select" class="form-label">¿Dónde te encuentras ubicado?</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="formContainer col-12">
+                      <label for="email" class="form-label">Correo Electrónico</label>
+                      <input type="email" class="form-control" id="email " placeholder="Ingresa tu correo">
+                    </div>
+                    <div class="formContainer col-12">
+                      <label for="telefono" class="form-label">Teléfono</label>
+                      <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                    </div>
+                    <div class="mb-3"></div>
+                    <div class="text-center">
+                      <button class="btn btn-warning">Agendar demo</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" id="cardform">
-              <div class="card-body">
-                <form class="row g-3" action="">
-                  <h3 class="text-center">Agenda tu demo</h3>
-                  <!--<hr class="subs">-->
-                  <div class="col-md-6">
-                    <label for="name" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="select" class="form-label">¿Dónde te encuentras ubicado?</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Seleccione</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email " placeholder="Ingresa tu correo">
-                  </div>
-                  <div class="col-12">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
-                  </div>
-                  <div class="mb-3"></div>
-                  <div class="text-center mt-5">
-                    <button class="btn btn-warning">Agendar demo</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
         </div>
+        <!--End of Formulario Main-->
       </div>
-      <!--End of Formulario Main-->
     </div>
     <!--Waves Container-->
     <div>
@@ -322,7 +326,7 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-lg" id="btn-contratar">Deseo contratar ahora</button>
+    <a class="btn btn-lg" href="#formhubspot" id="btn-contratar">Deseo contratar ahora</a>
   </div>
   <!--End of Casos de exito-->
   <br>
@@ -339,7 +343,7 @@
           <div class="card border-light" id="cardobtener">
             <img src="./assets/freelance-young-asian-business.png" class="card-img-top" alt="...">
             <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
-              <img src="./assets/Componente 1 – 1.png" width="110px">
+              <img src="./assets/Componente1–1.png" width="110px">
             </span>
             </img>
             <div class="card-body text-center">
@@ -351,7 +355,7 @@
           <div class="card border-light" id="cardobtener">
             <img src="./assets/happy-male-writing-positive-ma.png" class="card-img-top" alt="...">
             <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
-              <img src="./assets/Componente 2 – 1.png" width="110px">
+              <img src="./assets/Componente2–1.png" width="110px">
             </span>
             </img>
             <div class="card-body text-center">
@@ -363,7 +367,7 @@
           <div class="card border-light" id="cardobtener">
             <img src="./assets/successful-businessman-casual-.png" class="card-img-top" alt="...">
             <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill">
-              <img src="./assets/Componente 3 – 1.png" width="110px">
+              <img src="./assets/Componente3–1.png" width="110px">
             </span>
             </img>
             <div class="card-body text-center">
@@ -504,6 +508,13 @@
   </div>
   <!--End of Apoyo-->
   <br>
+
+  <!-- Back to top button -->
+  <!-- <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button> -->
+  <!-- End of Back to top button -->
+
   <!--Footer-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="col-md-6 text-center">
