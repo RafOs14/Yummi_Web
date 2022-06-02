@@ -126,7 +126,7 @@ margin-bottom: 20px;
 }
 
 #casos{
-    background-image: url("../assets/bg.png");
+    background-image: url("../assets/downbg.png");
 }
 
 /* Fin de Casos de exito */
@@ -141,18 +141,12 @@ margin-bottom: 20px;
 
 /* Venta */
 #venta{
-    background: url("../assets/Clip.png");  
-    
+    background: url("../assets/img/Clip.png");     
     background-size: cover; 
     overflow: hidden;
-    
-    
-
-
 }
 
-.cardventa {
-    
+.cardventa {    
     overflow: hidden;
     background: none;
     border: none;
@@ -209,6 +203,14 @@ margin-bottom: 20px;
 }
 
 /* Fin de precios */
+
+/* Apoyo */
+
+#apoyo {
+    background: url("../assets/shapebg.png"); 
+}
+
+/* Fin de apoyo */
 
 /*Footer*/
 
@@ -305,9 +307,6 @@ margin-bottom: 20px;
   .content {  
    height:30vh;  
   } 
-  
- 
-
  }  
  @media (min-width: 1000px) {  
     .cardsideform{
@@ -316,3 +315,20 @@ margin-bottom: 20px;
     }
 }
 /*Fin Waves en main*/
+
+/*Estilos del formulario hubspot */
+
+.hp-yuumi-form {
+    width: 50%;
+    display: table;
+    margin: 0 auto;
+    padding: 30pt;
+  }
+  
+  @media only screen and(max-width:820px) {
+    .hp-yuumi-form {
+      width: 90% !important;
+    }
+  }
+
+  /*Fin de estilos del formulario hubspot */
