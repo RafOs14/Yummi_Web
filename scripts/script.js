@@ -1,5 +1,5 @@
 //Anclajes a las secciones de la pagina
-$(function(){
+(function(){
     $('a[href*=#ancla]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var $target = $(this.hash);
@@ -13,33 +13,31 @@ $(function(){
     });
 });
 
+/*Fin de anclajes */
 
 
-/*Back to top button*/
-// //Get the button
-// let mybutton = document.getElementById("btn-back-to-top");
+// Boton de cambio de precios
 
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-//   scrollFunction();
-// };
+var estado = false 
+let accept=document.getElementById("accept");
+accept.addEventListener('change', function(e) {
+   if(estado == false){
 
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 20 ||
-//     document.documentElement.scrollTop > 20
-//   ) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-// // When the user clicks on the button, scroll to the top of the document
-// mybutton.addEventListener("click", backToTop);
+        document.getElementById("starterTextPrice").innerHTML = "$79.900";    
+        document.getElementById("starterPrice").innerHTML = "<span>$39.950</span> / mes";   
+    
+        document.getElementById("premiumTextPrice").innerHTML = "$139.900";
+        document.getElementById("premiumPrice").innerHTML = "<span>$69.950</span> / mes";
+        estado = true
+   }else{
+       
+        document.getElementById("starterTextPrice").innerHTML = "$39.950";
+        document.getElementById("starterPrice").innerHTML = "<span>$79.900</span> / anual";  
+        document.getElementById("premiumTextPrice").innerHTML = "$69.950";
+        document.getElementById("premiumPrice").innerHTML = "<span>$139.900</span> / anual";
 
-// function backToTop() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
+        estado=false
+   }
+});
 
-/* Fin de back to top button*/
+/* Fin boton cambio de precios */
