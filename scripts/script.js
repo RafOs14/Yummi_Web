@@ -31,9 +31,9 @@ accept.addEventListener('change', function(e) {
         estado = true
    }else{
        
-        document.getElementById("starterTextPrice").innerHTML = "$39.950";
+        document.getElementById("starterTextPrice").innerHTML = "";
         document.getElementById("starterPrice").innerHTML = "<span>$79.900</span> / anual";  
-        document.getElementById("premiumTextPrice").innerHTML = "$69.950";
+        document.getElementById("premiumTextPrice").innerHTML = "";
         document.getElementById("premiumPrice").innerHTML = "<span>$139.900</span> / anual";
 
         estado=false
