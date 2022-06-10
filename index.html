@@ -55,11 +55,25 @@
                   </div>
                 </div>
                 <div class="col-md-5">
-                  <div class="card" id="cardform">
-                    <div class="card-body">
-                      <form class="row g-3" action="" id="formulariomain">
-                        <h3 class="text-center">Agenda tu demo</h3>
-                        <!--<hr class="subs">-->
+                  <!--Contenedor de formulario hubspot-->
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <div class="hp-yuumi-form mt-5" id="form">                    
+                    <br />
+                    <!-- FORM CODE-->
+                    <script>
+                      hbspt.forms.create({
+                        region: "na1",
+                        portalId: "21922626",
+                        formId: "675f0160-09d7-4187-b9bf-087002c1e571"
+                      });
+                    </script>
+                    <!-- FORM CODE-->
+                  </div>
+                  <!--Fin de contenedor de formulario hubspot-->
+                  <!--<div class="card">
+                    <div class="card-body">                      
+                       <form class="row g-3" action="" id="formulariomain">
+                        <h3 class="text-center">Agenda tu demo</h3>                        
                         <div class="formContainer col-md-5">
                           <label for="name" class="form-label">Nombre Completo</label>
                           <input type="text" class="form-control" name="name" id="name" placeholder="Ingresa tu nombre">
@@ -88,7 +102,7 @@
                         </div>
                       </form>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -448,7 +462,7 @@
             <p class="promo">50% off</p>
           </div>
           <div class="col-3">
-            <p>Anual</p>
+            <p>Mensual</p>
           </div>
           <div class="col-3">
             <label for="accept" class="switch">
@@ -457,7 +471,7 @@
             </label>
           </div>
           <div class="col-3">
-            <p>Mensual</p>
+            <p>Anual</p>
           </div>
       </div>
     </div>
@@ -599,3 +613,4 @@
     </body>
 
   </html>
+
