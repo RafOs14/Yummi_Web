@@ -1,4 +1,4 @@
-//Anclajes a las secciones de la pagina
+/* Anclajes a las secciones de la pagina */
 (function(){
     $('a[href*=#ancla]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -12,12 +12,10 @@
         }
     });
 });
-
 /*Fin de anclajes */
 
 
-// Boton de cambio de precios
-
+/* Boton de cambio de precios */
 var estado = false 
 let accept=document.getElementById("accept");
 accept.addEventListener('change', function(e) {
@@ -39,5 +37,25 @@ accept.addEventListener('change', function(e) {
         estado=false
    }
 });
-
 /* Fin boton cambio de precios */
+
+/* Inicio de animaciones Ver Mas - Ver Menos */
+let elemento = document.getElementById('ocultar');
+let mas = document.getElementById('btnmas');
+let menos = document.getElementById('btnmenos');
+
+elemento.style.display = 'none';
+menos.style.display = 'none';
+
+function mostrarDiv(){
+    elemento.style.display = '';
+    mas.style.display = 'none';
+    menos.style.display = '';
+}
+
+function ocultarDiv(){
+    elemento.style.display = 'none';
+    mas.style.display = '';
+    menos.style.display = 'none';
+}
+/* Fin de animaciones Ver Mas - Ver Menos */
